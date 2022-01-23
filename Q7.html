@@ -1,64 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Designing of Form</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Card</title>
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      span {
-  
-        text-decoration: overline;
-        margin: 0px;
-        width: 100%;
-        padding-top: 10px;
-      }
-      label {
-        font-weight: bold;
-      }
-      h3 {
-        color: black;
-        padding-bottom: 20px;
-      }
-      h3 span {
-        background-color: Lavender;
-        border-radius: 1px;
-      }
-      div {
-        box-sizing: border-box;
-        border: 2px solid rgb(59, 24, 24);
-        width: 350px;
-        height: 250px;
-        padding: 0px;
-      }
+      
+        .container>span{
+            text-decoration: overline;    
+        }
+        .sec{
+            
+            border: 2px solid;
+            width: 30.5%;
+            margin-left:450px;
+            margin-top:130px;
+            padding-left: 10px;
+            position:absolute;
+            padding: top -1px;
+            border-top: 2px solid
+
+            
+            
+        }
+        .sub{
+            background-color:red;
+            position: top;
+            text-align: top center;
+            margin-top: 0px;
+            height: auto;
+            
+        }
     </style>
-  </head>
-  <body>
-    <div>
-      <h3 styele="text-decoration: none"><span>Yes! I want to subscribe to Tinder</span></h3>
-      <span>First Name</span>
-      <span>Last Name</span><br /><br />
-      <span>Address</span><br /><br />
-      <span>City</span>
-      <span>State</span>
-      <span>Zip</span><br /><br />
-      <label for="subscribefor"><b>Subscribe for:</b></label>
-      <input type="radio" name="subscribe" value="1 year" />
-      <label for="subscribefor"><b>1 year($19.91)</b></label>
-      <input type="radio" name="subscribe" value="1 year" />
-      <label for="subscribefor"><b>2 year($35.00)</b></label
-      ><br />
-      <label>Send me more information about:</label><br />
-      <input type="checkbox" id="Monthly" name="information" />
-      <label for="Monthly">Monthly</label><br />
-      <input type="checkbox" id="Quarterly" name="information" />
-      <label for="Quarterly">Quarterly</label><br />
-      <input type="checkbox" id="Yearly" name="information" />
-      <label for="Yearly">Yearly</label>
-    </div>
-  </body>
+</head>
+<body>
+    <section class="sec">
+    <h2><span class="sub"> yes! I want to Subscribe to Mag-O-Zine</span></h2>
+<div class="container">
+    <span>First-Name</span>&nbsp;&nbsp;&nbsp;
+    <span>Last-Name</span> <br/><br/>
+    <span>Address</span><br/><br/>
+    <span>City</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span>State</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span>Zip</span><br/><br/>
+</div>
+
+    <!-- next phase of checkbox-->
+    <label for=""><b>Subscribe For:</b></label>
+    <input type="checkbox" name="Check" id="check" value="Check" checked>
+    <label for="Checkbox"><b>1 year ($19.95)</b> </label>
+
+    <input type="checkbox" name="Check" id="check" value="Check">
+    <label for="Checkbox"> <b>2 year ($35.00)</b></label>
+    
+    <p> <b> <span>Send me more information:</span> </b> </p> 
+    <input type="checkbox" id="check" value="check" name="Computer-Zine" checked>
+    <label for="chckbox"> Computer-zine</label><br/>
+
+    <input type="checkbox" id="check" value="check" name="Fishing-zine">
+    <label for="chckbox"> Fishing-zine</label><br/>
+
+    <input type="checkbox" id="check" value="check" name="Cat-o-Zine" checked>
+    <label for="chckbox"> Cat-o-zine</label>
+</section>
+
+   
+    
+
+</body>
 </html>
